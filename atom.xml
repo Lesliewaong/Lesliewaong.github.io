@@ -6,7 +6,7 @@
   <link href="https://lesliewaong.top/atom.xml" rel="self"/>
   
   <link href="https://lesliewaong.top/"/>
-  <updated>2021-08-25T10:51:51.273Z</updated>
+  <updated>2021-08-25T10:59:14.196Z</updated>
   <id>https://lesliewaong.top/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://lesliewaong.top/posts/2756f2af.html"/>
     <id>https://lesliewaong.top/posts/2756f2af.html</id>
     <published>2021-08-25T10:43:28.000Z</published>
-    <updated>2021-08-25T10:51:51.273Z</updated>
+    <updated>2021-08-25T10:59:14.196Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="Git安装-Github"><a href="#Git安装-Github" class="headerlink" title="Git安装 (Github)"></a>Git安装 (Github)</h2><p>稳定版【建议】</p><p>在你的 Hexo 根目录里</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> master https://github.com/jerryc127/hexo<span class="literal">-theme</span><span class="literal">-butterfly</span>.git themes/butterfly</span><br></pre></td></tr></table></figure><h2 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h2><p>修改 Hexo 根目录下的 _config.yml，把主题改为butterfly</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">butterfly</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="Git安装-Github"><a href="#Git安装-Github" class="headerlink" title="Git安装 (Github)"></a>Git安装 (Github)</h2><p>稳定版【建议】</p><p>在你的 Hexo 根目录里</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> master https://github.com/jerryc127/hexo<span class="literal">-theme</span><span class="literal">-butterfly</span>.git themes/butterfly</span><br></pre></td></tr></table></figure><h2 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h2><p>修改 Hexo 根目录下的 _config.yml，把主题改为butterfly</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">butterfly</span></span><br></pre></td></tr></table></figure><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>如果你没有 pug 以及 stylus 的渲染器，请下载安装：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo<span class="literal">-renderer</span><span class="literal">-pug</span> hexo<span class="literal">-renderer</span><span class="literal">-stylus</span> -<span class="literal">-save</span></span><br></pre></td></tr></table></figure><h2 id="建议修改"><a href="#建议修改" class="headerlink" title="建议修改"></a>建议修改</h2><p>在 hexo 的根目录创建一个文件 <code>_config.butterfly.yml</code>，并把主题目录的 <code>_config.yml</code> 内容复製到 <code>_config.butterfly.yml</code> 去。</p><blockquote><p>注意： ==不要把主题目录的 _config.yml 删掉==</p></blockquote><p>以后只需要在 <code>_config.butterfly.yml</code>进行配置就行。</p><p>Hexo会自动合併主题中的<code>_config.yml</code>和 <code>_config.butterfly.yml</code>里的配置，如果存在同名配置，会使用<code>_config.butterfly.yml</code>的配置，其优先度较高。</p>]]></content>
     
     
       
