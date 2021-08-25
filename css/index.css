@@ -186,7 +186,7 @@ template {
 #aside-content .card-categories ul.card-category-list > .card-category-list-item a span,
 #pagination .prev_info,
 #pagination .next_info,
-#sidebar #sidebar-menus .site-data .data-item > a > div,
+#sidebar #sidebar-menus .site-data .data-item .data-item-link > a > div,
 #sidebar #sidebar-menus .menus_items .site-page {
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -1322,8 +1322,8 @@ canvas:not(#ribbon-canvas),
   --blockquote-bg: rgba(73,177,245,0.1);
   --reward-pop: #f5f5f5;
   --toc-link-color: #666261;
-  --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
-  --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
+  --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.06);
+  --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.15);
 }
 html {
   height: 100%;
@@ -1505,6 +1505,14 @@ a:hover {
   -o-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
+}
+img {
+  max-width: 100%;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
 }
 img[src=''],
 img:not([src]) {
@@ -1859,15 +1867,8 @@ blockquote footer cite:before {
   -ms-animation: code-expand-key 1.2s infinite;
   animation: code-expand-key 1.2s infinite;
 }
-#article-container .code-expand-btn.expand-done > i {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-#article-container .code-expand-btn.expand-done + table {
-  margin-bottom: 1.8em;
+#article-container .code-expand-btn.expand-done {
+  display: none !important;
 }
 #article-container .code-expand-btn:not(.expand-done) ~ table,
 #article-container .code-expand-btn:not(.expand-done) ~ pre {
@@ -4432,7 +4433,6 @@ blockquote footer cite:before {
 #article-container img {
   display: block;
   margin: 0 auto 0.8rem;
-  max-width: 100%;
 }
 #article-container p {
   margin: 0 0 0.8rem;
@@ -4827,11 +4827,11 @@ blockquote footer cite:before {
 #sidebar #sidebar-menus .site-data .data-item {
   display: table-cell;
 }
-#sidebar #sidebar-menus .site-data .data-item .length-num {
+#sidebar #sidebar-menus .site-data .data-item .data-item-link .length-num {
   color: var(--text-highlight-color);
   font-size: 1.28em;
 }
-#sidebar #sidebar-menus .site-data .data-item .headline {
+#sidebar #sidebar-menus .site-data .data-item .data-item-link .headline {
   color: var(--font-color);
 }
 #sidebar #sidebar-menus hr {
@@ -5141,7 +5141,7 @@ figure.gallery-group:hover p {
 figure.gallery-group img {
   position: relative;
   margin: 0 !important;
-  max-width: none !important;
+  max-width: none;
   width: calc(100% + 20px);
   height: 250px;
   -webkit-backface-visibility: hidden;

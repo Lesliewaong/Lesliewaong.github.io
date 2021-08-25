@@ -6,7 +6,7 @@
   <link href="https://lesliewaong.top/atom.xml" rel="self"/>
   
   <link href="https://lesliewaong.top/"/>
-  <updated>2021-08-25T10:02:19.610Z</updated>
+  <updated>2021-08-25T10:51:51.273Z</updated>
   <id>https://lesliewaong.top/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Butterfly主题</title>
+    <link href="https://lesliewaong.top/posts/2756f2af.html"/>
+    <id>https://lesliewaong.top/posts/2756f2af.html</id>
+    <published>2021-08-25T10:43:28.000Z</published>
+    <updated>2021-08-25T10:51:51.273Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="Git安装-Github"><a href="#Git安装-Github" class="headerlink" title="Git安装 (Github)"></a>Git安装 (Github)</h2><p>稳定版【建议】</p><p>在你的 Hexo 根目录里</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> master https://github.com/jerryc127/hexo<span class="literal">-theme</span><span class="literal">-butterfly</span>.git themes/butterfly</span><br></pre></td></tr></table></figure><h2 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h2><p>修改 Hexo 根目录下的 _config.yml，把主题改为butterfly</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">butterfly</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;h2 id=&quot;Git安装-Github&quot;&gt;&lt;a href=&quot;#Git安装-Github&quot; class=&quot;headerlink&quot; title=&quot;G</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>JavaScript数据结构与算法</title>
