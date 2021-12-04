@@ -2,51 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lesliewaong.top/List/gallery/wallpaper2/index.html</loc>
+    
+    <lastmod>2021-12-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lesliewaong.top/List/gallery/wallpaper1/index.html</loc>
+    
+    <lastmod>2021-12-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lesliewaong.top/List/gallery/index.html</loc>
     
-    <lastmod>2021-12-03</lastmod>
+    <lastmod>2021-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lesliewaong.top/posts/d8a440d1.html</loc>
+    <loc>https://lesliewaong.top/posts/bbf9924c.html</loc>
     
-    <lastmod>2021-11-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/posts/c6d48fcf.html</loc>
-    
-    <lastmod>2021-10-30</lastmod>
+    <lastmod>2021-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lesliewaong.top/posts/54b11a0c.html</loc>
+    <loc>https://lesliewaong.top/posts/2756f2af.html</loc>
     
-    <lastmod>2021-10-30</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/posts/65940d5a.html</loc>
-    
-    <lastmod>2021-10-30</lastmod>
+    <lastmod>2021-12-04</lastmod>
     
   </url>
   
   <url>
     <loc>https://lesliewaong.top/posts/32e4259a.html</loc>
     
-    <lastmod>2021-10-30</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/posts/2eec1551.html</loc>
-    
-    <lastmod>2021-10-30</lastmod>
+    <lastmod>2021-12-04</lastmod>
     
   </url>
   
@@ -54,48 +47,6 @@
     <loc>https://lesliewaong.top/List/music/index.html</loc>
     
     <lastmod>2021-10-21</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/posts/2181d083.html</loc>
-    
-    <lastmod>2021-09-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/posts/bbf9924c.html</loc>
-    
-    <lastmod>2021-09-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/posts/2756f2af.html</loc>
-    
-    <lastmod>2021-09-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/posts/a9ba4134.html</loc>
-    
-    <lastmod>2021-09-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/List/gallery/wallpaper/index.html</loc>
-    
-    <lastmod>2021-08-27</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/List/gallery/ohmygirl/index.html</loc>
-    
-    <lastmod>2021-08-27</lastmod>
     
   </url>
   
@@ -172,7 +123,7 @@
 
   <url>
     <loc>https://lesliewaong.top/</loc>
-    <lastmod>2021-12-03</lastmod>
+    <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -180,84 +131,14 @@
   
   <url>
     <loc>https://lesliewaong.top/tags/Butterfly/</loc>
-    <lastmod>2021-12-03</lastmod>
+    <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lesliewaong.top/tags/Hexo/</loc>
-    <lastmod>2021-12-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/tags/Ajax/</loc>
-    <lastmod>2021-12-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/tags/Axios/</loc>
-    <lastmod>2021-12-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/tags/JS/</loc>
-    <lastmod>2021-12-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/tags/Promise/</loc>
-    <lastmod>2021-12-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/tags/ES6/</loc>
-    <lastmod>2021-12-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/tags/React/</loc>
-    <lastmod>2021-12-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/tags/%E6%A1%86%E6%9E%B6/</loc>
-    <lastmod>2021-12-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2021-12-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/tags/HTML/</loc>
-    <lastmod>2021-12-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/tags/CSS/</loc>
-    <lastmod>2021-12-03</lastmod>
+    <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -266,21 +147,7 @@
   
   <url>
     <loc>https://lesliewaong.top/categories/Hexo/</loc>
-    <lastmod>2021-12-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/categories/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2021-12-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2021-12-03</lastmod>
+    <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
