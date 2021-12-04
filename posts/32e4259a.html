@@ -17,7 +17,7 @@
   localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
   translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
   noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"一年之内的产物","messageNext":"技术可能存在过期"},
-  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
   copy: {
     success: '复制成功',
     error: '复制错误',
@@ -169,26 +169,22 @@
 <p>按照自己的机器选择对应的版本下载，我是windous 64位</p>
 <h1 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h1><p><a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git官网</a></p>
 <h1 id="检验软件是否安装成功"><a href="#检验软件是否安装成功" class="headerlink" title="检验软件是否安装成功"></a>检验软件是否安装成功</h1><p>同时按下 Win 键和 R 键打开运行窗口,输入 <code>cmd</code> ，然后输入以下命令，有相应版本信息显示则安装成功，若不正确可以卸载软件重新安装。</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> --version
-node -v
-<span class="token function">npm</span> -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5sxpPU"><img src="https://z3.ax1x.com/2021/10/21/5sxpPU.png" alt="5sxpPU.png"></a></p>
 <p>此外若安装成功，在桌面右键鼠标，可以看到菜单里多了 <code>Git GUI Here</code> 和 <code>Git Bash Here</code>两个选项，第一个是<code>图形界面的Git操作</code>，另一个<code>是命令行</code>，我们一般使用第二个</p>
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5sxFM9"><img src="https://z3.ax1x.com/2021/10/21/5sxFM9.png" alt="5sxFM9.png"></a></p>
 <h1 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h1><p>选择一个磁盘，新建一个文件夹，自己重命名文件夹（如：我的文件夹为：E:\Blog），博客相关文件将储存在此文件夹下，在该文件夹下右键鼠标，点击 Git Bash Here，输入以下 npm 命令即可安装。第一次可能需要久一点输入命令后等一等，再输入第二条命令。</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> hexo-cli -g
-<span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
 <p>第一个命令表示安装 hexo，第二个命令表示安装 hexo 部署到 git page 的 deployer，如图所示即为安装成功</p>
 <h1 id="Hexo-初始化配置"><a href="#Hexo-初始化配置" class="headerlink" title="Hexo 初始化配置"></a>Hexo 初始化配置</h1><p>在刚才新建的文件夹里面再次新建一个 Hexo 文件夹（如：我的文件夹为：E:\Blog\Hexo）,进入该 Hexo 文件夹右键鼠标，点击 Git Bash Here，输入以下命令，如图所示则安装成功<br>如果失败了就再输入一次，比如说我</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">hexo init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 
 <p>Hexo 安装完成后，将会在指定文件夹中新建所需要的文件，Hexo 文件夹下的目录如下：</p>
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5sxC24"><img src="https://z3.ax1x.com/2021/10/21/5sxC24.png" alt="5sxC24.png"></a></p>
 <h1 id="本地查看效果"><a href="#本地查看效果" class="headerlink" title="本地查看效果"></a>本地查看效果</h1><p>执行以下命令</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">hexo generate <span class="token punctuation">(</span>hexo g<span class="token punctuation">)</span>
-hexo server <span class="token punctuation">(</span>hexo s<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate (hexo g)</span><br><span class="line">hexo server (hexo s)</span><br></pre></td></tr></table></figure>
 
 <p>执行完即可登录 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 查看效果</p>
 <h1 id="将博客部署到-Github-Pages-上"><a href="#将博客部署到-Github-Pages-上" class="headerlink" title="将博客部署到 Github Pages 上"></a>将博客部署到 Github Pages 上</h1><p>到目前为止，我们的本地博客就成功搭建了，但是现在我们只能通过本地连接查看博客，我们要做的是让其他人也能够访问我们的博客，这就需要我们将博客部署到Github Pages上</p>
@@ -199,29 +195,19 @@ hexo server <span class="token punctuation">(</span>hexo s<span class="token pun
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5sxAq1"><img src="https://z3.ax1x.com/2021/10/21/5sxAq1.png" alt="5sxAq1.png"></a></p>
 <p><strong>三、配置 <code>SSH</code> 密钥：</strong></p>
 <p>只有配置好 <code>SSH</code> 密钥后，我们才可以通过 git 操作实现本地代码库与 Github 代码库同步，在你第一次新建的文件夹里面 <code>Git Bash Here</code> 输入以下命令</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ssh-keygen -t rsa -C <span class="token string">"your email@example.com"</span>
-//引号里面填写你的邮箱地址<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your email@example.com&quot;</span><br><span class="line">//引号里面填写你的邮箱地址</span><br></pre></td></tr></table></figure>
 
 <p>之后会出现：</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Generating public/private rsa key pair.
-Enter <span class="token function">file</span> <span class="token keyword">in</span> <span class="token function">which</span> to save the key <span class="token punctuation">(</span>/c/Users/you/.ssh/id_rsa<span class="token punctuation">)</span>:
-//到这里可以直接回车将密钥按默认文件进行存储<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/c/Users/you/.ssh/id_rsa):</span><br><span class="line">//到这里可以直接回车将密钥按默认文件进行存储</span><br></pre></td></tr></table></figure>
 
 <p>然后会出现：</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Enter passphrase <span class="token punctuation">(</span>empty <span class="token keyword">for</span> no passphrase<span class="token punctuation">)</span>:
-//这里是要你输入密码，其实不需要输什么密码，直接回车就行
-Enter same passphrase again:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty for no passphrase):</span><br><span class="line">//这里是要你输入密码，其实不需要输什么密码，直接回车就行</span><br><span class="line">Enter same passphrase again:</span><br></pre></td></tr></table></figure>
 
 <p>接下来屏幕会显示：</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Your identification has been saved <span class="token keyword">in</span> /c/Users/you/.ssh/id_rsa.
-Your public key has been saved <span class="token keyword">in</span> /c/Users/you/.ssh/id_rsa.pub.
-The key fingerprint is:
-这里是各种字母数字组成的字符串，结尾是你的邮箱
-The key's randomart image is:
-这里也是各种字母数字符号组成的字符串<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Your identification has been saved in /c/Users/you/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">这里是各种字母数字组成的字符串，结尾是你的邮箱</span><br><span class="line">The key&#x27;s randomart image is:</span><br><span class="line">这里也是各种字母数字符号组成的字符串</span><br></pre></td></tr></table></figure>
 
 <p>运行以下命令，将公钥的内容复制到系统粘贴板上</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">clip <span class="token operator">&lt;</span> ~/.ssh/id_rsa.pub<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">clip &lt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 
 <p><strong>四、在 GitHub 账户中添加你的公钥</strong></p>
 <p>1.登陆 GitHub，进入 <code>Settings</code>：</p>
@@ -230,14 +216,14 @@ The key's randomart image is:
 <p>4.粘贴密钥：</p>
 <p><strong>五、测试</strong></p>
 <p>直接在桌面右键 点击 Git Bash Here，输入以下命令输入以下命令：注意：<a href="mailto:git@github.com">git@github.com</a>不要做任何更改！</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">ssh</span> -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 
 <p>之后会显示：</p>
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5svz5T"><img src="https://z3.ax1x.com/2021/10/21/5svz5T.png" alt="5svz5T.png"></a></p>
 <p>此时表示设置正确</p>
 <p><strong>六、配置 Git 个人信息</strong></p>
 <p>Git 会根据用户的名字和邮箱来记录提交，GitHub 也是用这些信息来做权限的处理，输入以下命令进行个人信息的设置，把名称和邮箱替换成你自己的，名字可以不是 GitHub 的昵称，但为了方便记忆，建议与 GitHub 一致</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> config --global user.name <span class="token string">"此处填你的用户名"</span><span class="token function">git</span> config --global user.email <span class="token string">"此处填你的邮箱"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;此处填你的用户名&quot;git config --global user.email &quot;此处填你的邮箱&quot;</span><br></pre></td></tr></table></figure>
 
 <p>到此为止 SSH Key 配置成功，本机已成功连接到 Github</p>
 <h1 id="将本地的-Hexo-文件更新到-Github-的库中"><a href="#将本地的-Hexo-文件更新到-Github-的库中" class="headerlink" title="将本地的 Hexo 文件更新到 Github 的库中"></a>将本地的 Hexo 文件更新到 Github 的库中</h1><p><strong>一、登录 Github 打开自己的项目 yourname.github.io</strong></p>
@@ -246,57 +232,44 @@ The key's randomart image is:
 <p><strong>四、滑到最下面,按下图修改 _config.yml 文件并保存</strong></p>
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5sxkrR"><img src="https://z3.ax1x.com/2021/10/21/5sxkrR.png" alt="5sxkrR.png"></a></p>
 <p><strong>五、在 Hexo 文件夹下分别执行以下命令</strong></p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">hexo ghexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo ghexo d</span><br></pre></td></tr></table></figure>
 
 <p>或者直接执行</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">hexo g -d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 
 <p>执行完之后如果此时报错，说明你的 deployer 没有安装成功</p>
 <p>需要执行以下命令再安装一次：</p>
-<pre class="line-numbers language-none"><code class="language-none">CODEnpm install hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CODEnpm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
 <p>再执行 <strong>hexo g -d</strong>，你的博客就会部署到 Github 上了</p>
 <p><strong>六、访问博客</strong></p>
 <p>你的博客地址：https://你的用户名.github.io。</p>
 <h1 id="如何在博客上发表文章"><a href="#如何在博客上发表文章" class="headerlink" title="如何在博客上发表文章"></a>如何在博客上发表文章</h1><p>博客已经成功搭建了，但是我们该怎么写博客呢？</p>
 <p>一、新建一个空文章，输入以下命令，会在项目 \Hexo\source_posts 中生成 文章标题.md 文件，文章标题根据需要命名</p>
-<pre class="line-numbers language-none"><code class="language-none">hexo n &quot;文章标题&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;文章标题&quot;</span><br></pre></td></tr></table></figure>
 
 <p>二、用编辑器编写文章</p>
 <p>当我们用编辑器写好文章后，可以使用以下命令将其推送到服务器上</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">hexo g 
-hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
 <p>或者将两个命令合二为一输入以下命令：</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">hexo d -g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
 
 <p>现在访问你的博客就可以看见写好的文章啦！</p>
 <p><strong>常用命令</strong></p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">hexo <span class="token assign-left variable">cl</span><span class="token operator">==</span> hexo clean <span class="token comment">#清除缓存 </span>
-hexo g <span class="token operator">==</span> hexo generate<span class="token comment">#生成</span>
-hexo s <span class="token operator">==</span> hexo server <span class="token comment">#启动服务预览</span>
-hexo d <span class="token operator">==</span> hexo deploy<span class="token comment">#部署</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo cl== hexo clean #清除缓存 </span><br><span class="line">hexo g == hexo generate#生成</span><br><span class="line">hexo s == hexo server #启动服务预览</span><br><span class="line">hexo d == hexo deploy#部署</span><br></pre></td></tr></table></figure>
 
 <h1 id="添加自定义HTML页面"><a href="#添加自定义HTML页面" class="headerlink" title="添加自定义HTML页面"></a>添加自定义HTML页面</h1><p>在博客根目录的<code>source</code>文件夹下，新建文件夹<code>item</code>用于存放HTML文件</p>
 <p>在博客根目录的配置文件<code>_config.yml</code>文件里，跳过渲染</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment"># 跳过文件夹下所有文件</span>
-skip_render:
-  - <span class="token string">'tools/*'</span>
-  - <span class="token string">'tools/**'</span>
-  - <span class="token string">'GoogleHacking/*'</span>
-  - <span class="token string">'GoogleHacking/**'</span>
-  - <span class="token string">'item/*'</span> 
-  - <span class="token string">'item/**'</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 跳过文件夹下所有文件</span></span><br><span class="line">skip_render:</span><br><span class="line">  - &#x27;tools/*&#x27;</span><br><span class="line">  - &#x27;tools/**&#x27;</span><br><span class="line">  - &#x27;GoogleHacking/*&#x27;</span><br><span class="line">  - &#x27;GoogleHacking/**&#x27;</span><br><span class="line">  - &#x27;item/*&#x27; </span><br><span class="line">  - &#x27;item/**&#x27; </span><br></pre></td></tr></table></figure>
 
 <p>hexo部署的是静态文件，所有文章的md文件会被渲染成html文件(hexo g生成)，hexo会帮我们把所有css、js文件都加到文章里，我们之前跳过了渲染(第二步)，所以就需要手动把css、js整合到html文件里。</p>
 <p>最后在主题文件中添加按钮</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">menu:
-  项目<span class="token operator">||</span>fas fa-book:
-    火影: /item/Naruto/ <span class="token operator">||</span> fa fa-star<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  项目||fas fa-book:</span><br><span class="line">    火影: /item/Naruto/ || fa fa-star</span><br></pre></td></tr></table></figure>
 
 <h1 id="为你的-Hexo-博客配置个性域名"><a href="#为你的-Hexo-博客配置个性域名" class="headerlink" title="为你的 Hexo 博客配置个性域名"></a>为你的 Hexo 博客配置个性域名</h1><p>首先我们要购买域名，<a target="_blank" rel="noopener" href="https://www.aliyun.com/">阿里云</a>，<a target="_blank" rel="noopener" href="https://cloud.tencent.com/">腾讯云</a>都可以，也不贵，一年几十块钱，最便宜几块钱也能买到，以阿里云为例，我购买的域名是 qwq3.top，购买过程就不赘述了，选择阿里云的解析平台，来到阿里云的<code>域名控制台</code>，点击进入域名解析列表或者直接点击域名后面的解析</p>
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5sxPxJ"><img src="https://z3.ax1x.com/2021/10/21/5sxPxJ.png" alt="5sxPxJ.png"></a></p>
-<pre class="line-numbers language-none"><code class="language-none">方法一：点击添加记录，需要添加两个记录，两个记录类型都是 CNAME ，第一个主机记录为 @ ，第二个主机记录为 www ，记录值都是填你自己的博客地址（比如我的是：[](waterchen520.github.io)），保存之后域名解析就完成了！<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">方法一：点击添加记录，需要添加两个记录，两个记录类型都是 CNAME ，第一个主机记录为 @ ，第二个主机记录为 www ，记录值都是填你自己的博客地址（比如我的是：[](waterchen520.github.io)），保存之后域名解析就完成了！</span><br></pre></td></tr></table></figure>
 
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5svxaV"><img src="https://z3.ax1x.com/2021/10/21/5svxaV.png" alt="5svxaV.png"></a></p>
 <p>方法二：两个记录类型为 A ，第一个主机记录为 @ ，第二个主机记录为 www，记录值都为博客的 IP 地址，IP 地址可以 cmd 中输入 ping 你的博客地址 获得（比如我的：ping waterchen520.github.io），保存之后域名解析就完成了！</p>
