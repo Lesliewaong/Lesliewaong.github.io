@@ -2,11 +2,11 @@
 html {
     background: radial-gradient(#fc4a09,#f7d1ab);
 }
-/* Flex 视口*/
+/* Flex 水平竖直居中 */
 body {
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 100vw; /*vw 视口的初始包含块的宽度的 1%。*/
+    height: 100vh;/* vh 视口的初始包含块的高度的 1%。 */
     margin: 0;
     align-items: center;
     justify-content: center;
@@ -14,159 +14,246 @@ body {
 
 .naruto {
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: 60vmin;
+    height: 60vmin;
     border-radius: 50%;
     background-color: transparent;
-    border: 15px solid #eb4305;
-    overflow: hidden;
+    border: 1.5vmin solid #eb4305;
+    overflow: hidden;/* 隐藏多余部分*/
 }
-
-.naruto .hair {
-    height: 120px;
+/*
+*头发
+*/
+.hair {
+    height: 12vmin;
     background-color: #DCD768;
-    border-bottom: 5px solid #CEC968;
+    border-bottom: 0.5vmin solid #c4be4a;
 }
-
-.naruto .hiddenleaf {
-    height: 80px;
+/*
+*木叶护额
+*/
+/* 父元素相对定位，子元素absolute+transform实现绝对居中 */
+.hiddenleaf {
+    height: 8vmin;
     background-color: #4D4747;
+    position: relative;
 }
-
-.naruto .hiddenleaf .plate {
-    width: 300px;
-    height: 65px;
+.hiddenleaf .plate {
+    width: 30vmin;
+    height: 6.5vmin;
     background-color: #cecece;
-    margin: 0 auto;
-    padding: 3px 0 0 0;
-    vertical-align: middle;
-    border-radius: 10px;
-    transform: translateY(6px);
-    overflow: hidden;
+    /* margin: 0 auto; 水平居中 */
+    padding: 0.3vmin 0 0 0;
+    /* vertical-align: middle; */
+    border-radius: 1vmin;
+    /* transform: translateY(6px); */
+    /* overflow: hidden; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-
-/* .naruto .hiddenleaf .plate:after {
-    content: "";
-    display: block;
-    width: 85px;
-    height: 60px;
-    margin-left: 100px;
-    margin-top: -5px;
-    background-color: #B5B9C3;
-    transform: skew(-45deg);
-} */
-
-.naruto .face {
+.point {
     position: absolute;
-    top: 0;
-    width: 600px;
-    height: 600px;
+    width: 0.75vmin; /* vmin 视口高度 vw 和宽度 vh 两者之间的最小值。 */
+    height: 0.75vmin;
+    margin: 0;
+    border-radius: 50%;
+    border: 0.2vmin solid #240a07;
+    background-color: rgb(161, 160, 160);
+}
+
+.point.lt {
+    top: 10%;
+    left: 2%;
+}
+
+.point.lm {
+    top: 45%;
+    left: 2%;
+}
+
+.point.lb {
+    top: 80%;
+    left: 2%;
+}
+
+.point.rt {
+    top: 10%;
+    right: 2%;
+}
+
+.point.rm {
+    top: 45%;
+    right: 2%;
+}
+
+.point.rb {
+    top: 80%;
+    right: 2%;
+}
+
+.leaf {
+    position: absolute;
+    width: 5vmin;
+    height: 5vmin;
+    margin: 0;
+    border-radius: 50%;
+    border: 0.2vmin solid #240a07;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.leaf:after {
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 70%;
+    margin: 0;
+    border-radius: 50%;
+    border: 0.2vmin solid #240a07;
+    top: 10%;
+    left: 10%;
+    border-bottom: 0;
+    border-right: 0;
+    transform: rotate(-45deg);
+}
+
+.leaf:before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    margin: 0;
+    border-radius: 50%;
+    border: 0.2vmin solid #240a07;
+    top: 10%;
+    left: 10%;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.leaf .part-a {
+    position: absolute;
+    width: 2vmin;
+    height: 1vmin;
+    margin: 0;
+    border-left: 0.2vmin solid #240a07;
+    background-color: #cecece;
+    top: 5%;
+    left: 70%;
+    transform: rotate(60deg);
+    z-index: 2;
+}
+
+.leaf .part-b {
+    position: absolute;
+    width: 3vmin;
+    height: 2.5vmin;
+    margin: 0;
+    border: 0.2vmin solid #240a07;
+    border-right: 0;
+    border-top: 0;
+    top: 50%;
+    left: -10%;
+}
+/*
+*脸
+*/
+.face {
+    position: absolute;
+    /* top: 0; */
+    width: 60vmin;
+    height: 60vmin;
     background-color: #F2C9BE;
-    /* border: 5px solid #DFAB9D; */
-    /* border-radius: 50%; */
     z-index: -1;
 }
-
-.naruto .mouth {
+/*
+*嘴
+*/
+.mouth {
     position: absolute;
     bottom: 10%;
     left: 50%;
-    width: 75px;
-    height: 75px;
-    margin-left: -37px;
+    width: 7.5vmin;
+    height: 10vmin;
+    transform: translateX(-50%);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     background-color: #E89E8A;
 }
-
-.naruto .mouth:after {
-    content: "";
-    display: block;
-    width: 75px;
-    height: 40px;
-    background-color: #F2C9BE;
-}
-
-.naruto .whiskers .whisker {
+/*
+*须
+*/
+/* 利用border画三角形 */
+.whiskers .whisker {
     position: absolute;
     display: block;
     width: 0;
     height: 0;
-    border-right: 52px solid transparent;
-    border-left: 150px solid #917972;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    /* transform: rotate(-35deg); */
+    border-right: 5.2vmin solid transparent;
+    border-left: 15vmin solid #917972;
+    border-top: 2.5vmin solid transparent;
+    border-bottom: 2.5vmin solid transparent;
 }
 
-.naruto .whiskers .whisker:first-child {
+.whiskers .whisker:first-child {
     top: 60%;
 }
 
-.naruto .whiskers .whisker:nth-child(2) {
+.whiskers .whisker:nth-child(2) {
     top: 70%;
 }
 
-.naruto .whiskers .whisker:nth-child(3) {
+.whiskers .whisker:nth-child(3) {
     top: 80%;
 }
 
-.naruto .whiskers .whisker:nth-child(4) {
+.whiskers .whisker:nth-child(4) {
     top: 60%;
     right: 0;
     transform: rotate(180deg);
 }
 
-.naruto .whiskers .whisker:nth-child(5) {
+.whiskers .whisker:nth-child(5) {
     top: 70%;
     right: 0;
     transform: rotate(180deg);
 }
 
-.naruto .whiskers .whisker:nth-child(6) {
+.whiskers .whisker:nth-child(6) {
     top: 80%;
     right: 0;
     transform: rotate(180deg);
 }
-
-.naruto .eye {
-    height: 20vh;
+/*
+*眼睛
+*/
+.eye {
+    height: 20vmin;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    position: relative;
+    top: 1vmin;
 }
-
-
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-
-/* body {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-} */
-
-.left,
-.right {
-    width: 200px;
-    height: 100px;
+.left,.right {
+    width: 20vmin;
+    height: 10vmin;
     background-color: rgb(255, 255, 255);
-    border-bottom: 5px solid rgb(70, 70, 70);
+    border-bottom: 0.5vmin solid rgb(70, 70, 70);
     overflow: hidden;
     position: relative;
 }
-
+/*
+*写轮眼
+*/
 .left {
-    transform: translateX(-40px);
-    border-radius: 0 120px 0 120px;
-    box-shadow: inset 3px 2px 3px rgba(17, 17, 17, 0.8);
+    transform: translateX(-4vmin);
+    border-radius: 0 12vmin 0 12vmin;
+    box-shadow: inset 0.3vmin 0.2vmin 0.3vmin rgba(17, 17, 17, 0.8);
 }
 
 .left::after {
@@ -175,10 +262,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90px;
-    height: 90px;
+    width: 9vmin;
+    height: 9vmin;
     border-radius: 50%;
-    border: 2px solid #000;
+    border: 0.2vmin solid #000;
     animation: colour 2s linear forwards;
 }
 
@@ -197,8 +284,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     border-radius: 50%;
     background-color: rgb(0, 0, 0);
     z-index: 1;
@@ -207,23 +294,26 @@ body {
 
 @keyframes bigger {
     100% {
-        width: 15px;
-        height: 15px;
+        width: 1.5vmin;
+        height: 1.5vmin;
     }
 }
 
 .left-jade {
     position: absolute;
-    top: -25px;
-    left: -25px;
-    bottom: -25px;
-    right: -25px;
+    top: -2.5vmin;
+    left: -2.5vmin;
+    bottom: -2.5vmin;
+    right: -2.5vmin;
     border-radius: 50%;
-    border: 2px solid rgb(0, 0, 0);
-    animation: spin 2s linear 2s forwards;
+    border: 0.2vmin solid rgb(0, 0, 0);
+    animation: spin 2s linear 2s forwards ;
     opacity: 0;
 }
-
+.left-jade:hover{
+    animation: spin 2s linear 2s forwards infinite;
+    opacity: 1;
+}
 @keyframes spin {
     100% {
         opacity: 1;
@@ -233,8 +323,8 @@ body {
 
 .left-jade .jade {
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 1.5vmin;
+    height: 1.5vmin;
     border-radius: 50%;
     background-color: rgb(0, 0, 0);
 }
@@ -242,16 +332,16 @@ body {
 .left-jade .jade::after {
     content: '';
     position: absolute;
-    top: -6px;
-    left: -1px;
-    width: 6px;
-    height: 20px;
+    top: -0.6vmin;
+    left: -0.1vmin;
+    width: 0.6vmin;
+    height: 2vmin;
     border-radius: 50%;
-    border-left: 6px solid rgb(0, 0, 0);
+    border-left: 0.6vmin solid rgb(0, 0, 0);
 }
 
 .left-jade .jade:nth-child(1) {
-    animation: jade1 2s ease-in 2s forwards;
+    animation: jade1 2s ease-in 2s forwards ;
 }
 
 @keyframes jade1 {
@@ -303,24 +393,27 @@ body {
         transform: scale(1) rotate(180deg);
     }
 }
-
-.left::before,
-.right::before {
+/*
+*白点
+*/
+.left::before,.right::before {
     content: '';
     position: absolute;
     left: 38%;
     top: 30%;
-    width: 12px;
-    height: 12px;
+    width: 1.2vmin;
+    height: 1.2vmin;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     z-index: 10;
 }
-
+/*
+*轮回眼
+*/
 .right {
-    transform: translateX(40px);
-    border-radius: 120px 0 120px 0;
-    box-shadow: inset -3px 2px 3px rgba(17, 17, 17, 0.8);
+    transform: translateX(4vmin);
+    border-radius: 12vmin 0 12vmin 0;
+    box-shadow: inset -0.3vmin 0.2vmin 0.3vmin rgba(17, 17, 17, 0.8);
     /*             filter: drop-shadow( 8px -5px 3px  rgb(216, 59, 59));
 */
 }
@@ -331,10 +424,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90px;
-    height: 90px;
+    width: 9vmin;
+    height: 9vmin;
     border-radius: 50%;
-    border: 2px solid #000;
+    border: 0.2vmin solid #000;
     animation: rightcolor 2s linear forwards;
 }
 
@@ -361,12 +454,12 @@ body {
 
 @keyframes bigger {
     0% {
-        height: 0px;
-        width: 0px;
+        height: 0;
+        width: 0;
     }
     100% {
-        height: 15px;
-        width: 15px;
+        height: 1.5vmin;
+        width: 1.5vmin;
     }
 }
 
@@ -375,6 +468,17 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.right-cricle:hover{
+    animation: bigger2 2s ease-in-out forwards alternate-reverse infinite;
+}
+@keyframes bigger2 {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1.2);
+    }
 }
 
 .right-cricle .cricle:nth-child(1) {
@@ -394,154 +498,21 @@ body {
     border-radius: 50%;
     border: 2px solid #000;
     z-index: calc(1 - var(--r));
-    animation: zhi 2s ease-out 2s forwards;
+    animation: reincarnation 2s ease-out 2s forwards ;
+    
 }
-
-@keyframes zhi {
+@keyframes reincarnation {
     0% {
-        top: calc(var(--r) * 1px);
-        left: calc(var(--r) * 1px);
-        right: calc(var(--r) * 1px);
-        bottom: calc(var(--r) * 1px);
+        top: calc(var(--r) * 0.1vmin);
+        left: calc(var(--r) * 0.1vmin);
+        right: calc(var(--r) * 0.1vmin);
+        bottom: calc(var(--r) * 0.1vmin);
     }
     100% {
-        top: calc(var(--r) * -35px);
-        left: calc(var(--r) * -35px);
-        right: calc(var(--r) * -35px);
-        bottom: calc(var(--r) * -35px);
+        top: calc(var(--r) * -3.5vmin);
+        left: calc(var(--r) * -3.5vmin);
+        right: calc(var(--r) * -3.5vmin);
+        bottom: calc(var(--r) * -3.5vmin);
         background-color: rgb(187, 177, 214);
     }
-}
-
-.point {
-    position: absolute;
-    width: 0.75vmin;
-    height: 0.75vmin;
-    margin: 0;
-    border-radius: 50%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border: 2px solid #240a07;
-    background-color: #000;
-}
-
-.point.lt {
-    top: 10%;
-    left: 2%;
-}
-
-.point.lm {
-    top: 45%;
-    left: 2%;
-}
-
-.point.lb {
-    top: 80%;
-    left: 2%;
-}
-
-.point.rt {
-    top: 10%;
-    right: 2%;
-}
-
-.point.rm {
-    top: 45%;
-    right: 2%;
-}
-
-.point.rb {
-    top: 80%;
-    right: 2%;
-}
-
-.leaf {
-    position: absolute;
-    width: 5vmin;
-    height: 5vmin;
-    margin: 0;
-    border-radius: 50%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border: 2px solid #240a07;
-    top: 10%;
-    left: 40%;
-}
-
-.leaf:after {
-    position: absolute;
-    content: '';
-    width: 70%;
-    height: 70%;
-    margin: 0;
-    border-radius: 50%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border: 2px solid #240a07;
-    top: 12%;
-    left: 12%;
-    border-bottom: 0;
-    border-right: 0;
-    border-radius: 50%;
-    transform: rotate(-40deg);
-}
-
-.leaf:before {
-    content: '';
-    position: absolute;
-    width: 90%;
-    height: 90%;
-    margin: 0;
-    border-radius: 50%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border: 2px solid #240a07;
-    top: 10%;
-    left: 10%;
-    border-left: 0;
-    border-bottom: 0;
-}
-
-.leaf .part-a {
-    position: absolute;
-    width: 2vmin;
-    height: 1vmin;
-    margin: 0;
-    border-left: 2px solid #240a07;
-    background-color: #cecece;
-    top: 5%;
-    left: 70%;
-    transform: rotate(60deg);
-    z-index: 2;
-}
-
-.leaf .part-a:before {
-    position: absolute;
-    width: 1.4vmin;
-    height: 0.5vmin;
-    margin: 0;
-    transform: rotate(25deg);
-    top: 56%;
-    left: 1.6vmin;
-    background-color: #cecece;
-}
-
-.leaf .part-b {
-    position: absolute;
-    width: 3vmin;
-    height: 2.5vmin;
-    margin: 0;
-    border: 2px solid #240a07;
-    border-right: 0;
-    border-top: 0;
-    top: 50%;
-    left: -10%;
 }
