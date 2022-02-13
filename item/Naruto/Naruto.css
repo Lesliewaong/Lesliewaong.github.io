@@ -497,7 +497,7 @@ body {
 .cricle {
     position: absolute;
     border-radius: 50%;
-    border: 2px solid #000;
+    border: 0.2vmin solid #000;
     z-index: calc(1 - var(--r));
     animation: reincarnation 2s ease-out 2s forwards ;
     
