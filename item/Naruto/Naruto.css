@@ -133,6 +133,7 @@ body {
     left: 10%;
     border-left: 0;
     border-bottom: 0;
+    z-index: 3;
 }
 
 .leaf .part-a {
@@ -157,7 +158,7 @@ body {
     border-right: 0;
     border-top: 0;
     top: 50%;
-    left: -10%;
+    left: -5%;
 }
 /*
 *脸
