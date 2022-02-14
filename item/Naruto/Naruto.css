@@ -33,27 +33,88 @@ body {
 *木叶护额
 */
 /* 父元素相对定位，子元素absolute+transform实现绝对居中 */
-.hiddenleaf {
+.forehead {
     height: 8vmin;
     background-color: #4D4747;
     position: relative;
 }
-.hiddenleaf .plate {
+.forehead .plate {
     width: 30vmin;
     height: 6.5vmin;
     background-color: #cecece;
-    /* margin: 0 auto; 水平居中 */
     padding: 0.3vmin 0 0 0;
-    /* vertical-align: middle; */
     border-radius: 1vmin;
-    /* transform: translateY(6px); */
-    /* overflow: hidden; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.leaf {
+    position: absolute;
+    width: 5vmin;
+    height: 5vmin;
+    margin: 0;
+    border-radius: 50%;
+    border: 0.2vmin solid #240a07;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.leaf::after {
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 70%;
+    margin: 0;
+    border-radius: 50%;
+    border: 0.2vmin solid #240a07;
+    top: 10%;
+    left: 10%;
+    border-bottom: 0;
+    border-right: 0;
+    transform: rotate(-45deg);
+}
+
+.leaf::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    margin: 0;
+    border-radius: 50%;
+    border: 0.2vmin solid #240a07;
+    top: 10%;
+    left: 10%;
+    border-left: 0;
+    border-bottom: 0;
+    z-index: 3;
+}
+
+.leaf .part-a {
+    position: absolute;
+    width: 2vmin;
+    height: 1vmin;
+    margin: 0;
+    border-left: 0.2vmin solid #240a07;
+    background-color: #cecece;
+    top: 5%;
+    left: 70%;
+    transform: rotate(60deg);
+    z-index: 2;
+}
+
+.leaf .part-b {
+    position: absolute;
+    width: 3vmin;
+    height: 2.5vmin;
+    margin: 0;
+    border: 0.2vmin solid #240a07;
+    border-right: 0;
+    border-top: 0;
+    top: 50%;
+    left: -5%;
+}
 .point {
     position: absolute;
     width: 0.75vmin; /* vmin 视口高度 vw 和宽度 vh 两者之间的最小值。 */
@@ -94,72 +155,7 @@ body {
     right: 2%;
 }
 
-.leaf {
-    position: absolute;
-    width: 5vmin;
-    height: 5vmin;
-    margin: 0;
-    border-radius: 50%;
-    border: 0.2vmin solid #240a07;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-.leaf:after {
-    position: absolute;
-    content: '';
-    width: 70%;
-    height: 70%;
-    margin: 0;
-    border-radius: 50%;
-    border: 0.2vmin solid #240a07;
-    top: 10%;
-    left: 10%;
-    border-bottom: 0;
-    border-right: 0;
-    transform: rotate(-45deg);
-}
-
-.leaf:before {
-    content: '';
-    position: absolute;
-    width: 90%;
-    height: 90%;
-    margin: 0;
-    border-radius: 50%;
-    border: 0.2vmin solid #240a07;
-    top: 10%;
-    left: 10%;
-    border-left: 0;
-    border-bottom: 0;
-    z-index: 3;
-}
-
-.leaf .part-a {
-    position: absolute;
-    width: 2vmin;
-    height: 1vmin;
-    margin: 0;
-    border-left: 0.2vmin solid #240a07;
-    background-color: #cecece;
-    top: 5%;
-    left: 70%;
-    transform: rotate(60deg);
-    z-index: 2;
-}
-
-.leaf .part-b {
-    position: absolute;
-    width: 3vmin;
-    height: 2.5vmin;
-    margin: 0;
-    border: 0.2vmin solid #240a07;
-    border-right: 0;
-    border-top: 0;
-    top: 50%;
-    left: -5%;
-}
 /*
 *脸
 */
@@ -478,7 +474,7 @@ body {
         transform: scale(0.8);
     }
     100% {
-        transform: scale(1.2);
+        transform: scale(1);
     }
 }
 
