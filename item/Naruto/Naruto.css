@@ -235,7 +235,11 @@ body {
     /* align-items: center; */
     position: relative;
     top: 1vmin;
-    transform:translate(0,0,0);
+    
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
 }
 /* .left,.right {
     width: 20vmin;
@@ -255,11 +259,12 @@ body {
     border-bottom: 0.5vmin solid rgb(70, 70, 70);
     overflow: hidden;
     /* position: relative; */
-    /* transform: translateX(-4vmin); */
+    transform: translateX(-4vmin);
     border-radius: 0 12vmin 0 12vmin;
     box-shadow: inset 0.3vmin 0.2vmin 0.3vmin rgba(17, 17, 17, 0.8);
     filter: drop-shadow( -0.8vmin -0.5vmin 0.3vmin  rgb(216, 59, 59));
     /* -webkit-appearance: none;  */
+ 
 }
 
 .left::after {
