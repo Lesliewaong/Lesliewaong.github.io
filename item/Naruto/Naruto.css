@@ -1,6 +1,6 @@
 /* 渐变 */
 /* Flex 水平竖直居中 */
-body {
+html {
     display: flex;
     width: 100vw; /*vw 视口的初始包含块的宽度的 1%。*/
     height: 100vh;/* vh 视口的初始包含块的高度的 1%。 */
