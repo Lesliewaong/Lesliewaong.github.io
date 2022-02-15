@@ -232,8 +232,8 @@ body {
 .eye {
     height: 20vmin;
     display: flex;
-    /* justify-content: center; */
-    justify-content: space-around;
+    justify-content: center;
+    /* justify-content: space-around; */
     position: relative;
     top: 2vmin;
 }
@@ -247,9 +247,9 @@ body {
     /* border-bottom: 0.5vmin solid rgb(70, 70, 70); */
     border: none;
     overflow: hidden;
-    position: relative;
-    /* position: absolute; */
-    /* transform: translateX(-15vmin); */
+    /* position: relative; */
+    position: absolute;
+    transform: translateX(-15vmin);
     border-radius: 0 12vmin 0 12vmin;
     /* box-shadow: inset 0.3vmin 0.2vmin 0.3vmin rgba(17, 17, 17, 0.8); */
     box-shadow: inset 0 0 1vmin rgba(17, 17, 17, 0.8);
@@ -421,9 +421,9 @@ body {
     /* border-bottom: 0.5vmin solid rgb(70, 70, 70); */
     border: none;
     overflow: hidden;
-    position: relative;
-    /* position: absolute; */
-    /* transform: translateX(15vmin); */
+    /* position: relative; */
+    position: absolute;
+    transform: translateX(15vmin);
     border-radius: 12vmin 0 12vmin 0;
     /* box-shadow: inset -0.3vmin 0.2vmin 0.3vmin rgba(17, 17, 17, 0.8); */
     box-shadow: inset 0 0 1vmin rgba(17, 17, 17, 0.8);
