@@ -417,13 +417,6 @@
   </url>
   
   <url>
-    <loc>https://lesliewaong.top/tags/Promise/</loc>
-    <lastmod>2022-02-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lesliewaong.top/tags/React-Router/</loc>
     <lastmod>2022-02-15</lastmod>
     <changefreq>daily</changefreq>
@@ -431,7 +424,7 @@
   </url>
   
   <url>
-    <loc>https://lesliewaong.top/tags/TS/</loc>
+    <loc>https://lesliewaong.top/tags/Promise/</loc>
     <lastmod>2022-02-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -439,6 +432,13 @@
   
   <url>
     <loc>https://lesliewaong.top/tags/%E6%A1%86%E6%9E%B6/</loc>
+    <lastmod>2022-02-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lesliewaong.top/tags/TS/</loc>
     <lastmod>2022-02-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
