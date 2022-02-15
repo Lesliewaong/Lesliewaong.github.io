@@ -232,8 +232,8 @@ body {
 .eye {
     height: 20vmin;
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
+    /* justify-content: center; */
+    justify-content: space-around;
     position: relative;
     top: 2vmin;
 }
@@ -247,8 +247,9 @@ body {
     /* border-bottom: 0.5vmin solid rgb(70, 70, 70); */
     border: none;
     overflow: hidden;
-    position: absolute;
-    transform: translateX(-15vmin);
+    position: relative;
+    /* position: absolute; */
+    /* transform: translateX(-15vmin); */
     border-radius: 0 12vmin 0 12vmin;
     /* box-shadow: inset 0.3vmin 0.2vmin 0.3vmin rgba(17, 17, 17, 0.8); */
     box-shadow: inset 0 0 1vmin rgba(17, 17, 17, 0.8);
@@ -351,7 +352,7 @@ body {
         opacity: 0;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%) scale(0.1) rotate(0deg);
+        transform: translate(-50%, -50%) scale(0.1) rotate(80deg);
     }
     100% {
         left: 50%;
@@ -369,7 +370,7 @@ body {
         opacity: 0;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%) scale(0.1) rotate(0deg);
+        transform: translate(-50%, -50%) scale(0.1) rotate(-80deg);
     }
     100% {
         top: 60%;
@@ -387,7 +388,7 @@ body {
         opacity: 0;
         right: 50%;
         top: 50%;
-        transform: translate(-50%, -50%) scale(0.1) rotate(100deg);
+        transform: translate(-50%, -50%) scale(0.1) rotate(180deg);
     }
     100% {
         top: 60%;
@@ -415,16 +416,16 @@ body {
 .right {
     width: 20vmin;
     height: 10vmin;
-    position:fixed;
     /* background-color: rgb(187, 177, 214); */
     animation: bgcolor 2s linear 2s both;
     /* border-bottom: 0.5vmin solid rgb(70, 70, 70); */
+    border: none;
     overflow: hidden;
-    position: absolute;
-    transform: translateX(15vmin);
+    position: relative;
+    /* position: absolute; */
+    /* transform: translateX(15vmin); */
     border-radius: 12vmin 0 12vmin 0;
     /* box-shadow: inset -0.3vmin 0.2vmin 0.3vmin rgba(17, 17, 17, 0.8); */
-    border: none;
     box-shadow: inset 0 0 1vmin rgba(17, 17, 17, 0.8);
     filter: drop-shadow( 0.8vmin -0.5vmin 0.3vmin  rgb(216, 59, 59));
 
