@@ -236,21 +236,29 @@ body {
     position: relative;
     top: 1vmin;
 }
-.left,.right {
+/* .left,.right {
     width: 20vmin;
     height: 10vmin;
     background-color: rgb(255, 255, 255);
     border-bottom: 0.5vmin solid rgb(70, 70, 70);
     overflow: hidden;
     position: relative;
-}
+} */
 /*
 *写轮眼
 */
 .left {
+    width: 20vmin;
+    height: 10vmin;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 0.5vmin solid rgb(70, 70, 70);
+    overflow: hidden;
+    /* position: relative; */
     transform: translateX(-4vmin);
     border-radius: 0 12vmin 0 12vmin;
     box-shadow: inset 0.3vmin 0.2vmin 0.3vmin rgba(17, 17, 17, 0.8);
+    filter: drop-shadow( -0.8vmin -0.5vmin 0.3vmin  rgb(216, 59, 59));
+    -webkit-appearance: none; 
 }
 
 .left::after {
@@ -263,10 +271,10 @@ body {
     height: 9vmin;
     border-radius: 50%;
     border: 0.2vmin solid #000;
-    animation: colour 2s linear forwards;
+    animation: leftcolor 2s linear forwards;
 }
 
-@keyframes colour {
+@keyframes leftcolor {
     0%,
     30% {
         background-color: rgb(0, 0, 0);
@@ -308,7 +316,7 @@ body {
     opacity: 0;
 }
 .left-jade:hover{
-    animation: spin 2s linear 2s forwards infinite;
+    animation: spin 2s linear forwards infinite;
     opacity: 1;
 }
 @keyframes spin {
@@ -338,7 +346,7 @@ body {
 }
 
 .left-jade .jade:nth-child(1) {
-    animation: jade1 2s ease-in 2s forwards ;
+    animation: jade1 2s ease-out 2s forwards ;
 }
 
 @keyframes jade1 {
@@ -356,7 +364,7 @@ body {
 }
 
 .left-jade .jade:nth-child(2) {
-    animation: jade2 2s ease-in 2s forwards;
+    animation: jade2 2s ease-out 2s forwards;
 }
 
 @keyframes jade2 {
@@ -374,7 +382,7 @@ body {
 }
 
 .left-jade .jade:nth-child(3) {
-    animation: jade3 2s ease-in 2s forwards;
+    animation: jade3 2s ease-out 2s forwards;
 }
 
 @keyframes jade3 {
@@ -408,13 +416,26 @@ body {
 *轮回眼
 */
 .right {
+    width: 20vmin;
+    height: 10vmin;
+    /* background-color: rgb(187, 177, 214); */
+    animation: bgcolor 2s linear 2s both;
+    border-bottom: 0.5vmin solid rgb(70, 70, 70);
+    overflow: hidden;
     transform: translateX(4vmin);
     border-radius: 12vmin 0 12vmin 0;
     box-shadow: inset -0.3vmin 0.2vmin 0.3vmin rgba(17, 17, 17, 0.8);
-    /*             filter: drop-shadow( 8px -5px 3px  rgb(216, 59, 59));
-*/
-}
+    filter: drop-shadow( 0.8vmin -0.5vmin 0.3vmin  rgb(216, 59, 59));
 
+}
+@keyframes bgcolor {
+    0% {
+        background-color: rgb(255, 255, 255);
+    }
+    100% {
+        background-color: rgb(187, 177, 214);
+    }
+}
 .right::after {
     content: '';
     position: absolute;
@@ -500,10 +521,10 @@ body {
 }
 @keyframes reincarnation {
     0% {
-        top: calc(var(--r) * 0.1vmin);
-        left: calc(var(--r) * 0.1vmin);
-        right: calc(var(--r) * 0.1vmin);
-        bottom: calc(var(--r) * 0.1vmin);
+        top: calc(var(--r) * -0.1vmin);
+        left: calc(var(--r) * -0.1vmin);
+        right: calc(var(--r) * -0.1vmin);
+        bottom: calc(var(--r) * -0.1vmin);
     }
     100% {
         top: calc(var(--r) * -3.5vmin);
