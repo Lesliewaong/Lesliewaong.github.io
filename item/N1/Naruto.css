@@ -1,20 +1,17 @@
 /* 渐变 */
-html {
-    background: radial-gradient(#fc4a09,#f7d1ab);
-}
 /* Flex 水平竖直居中 */
-body {
+html {
     display: flex;
     width: 100vw; /*vw 视口的初始包含块的宽度的 1%。*/
     height: 100vh;/* vh 视口的初始包含块的高度的 1%。 */
     margin: 0;
     align-items: center;
     justify-content: center;
+    background: radial-gradient(#fc4a09,#f7d1ab);
 }
 
 .naruto {
-    /* position: relative; */
-    position:fixed;
+    position: relative;
     width: 60vmin;
     height: 60vmin;
     border-radius: 50%;
@@ -162,7 +159,6 @@ body {
 */
 .face {
     position: absolute;
-    /* top: 0; */
     width: 60vmin;
     height: 60vmin;
     background-color: #F2C9BE;
@@ -232,8 +228,8 @@ body {
 .eye {
     height: 20vmin;
     display: flex;
-    justify-content: space-around;
-    /* align-items: center; */
+    justify-content: center;
+    /* justify-content: space-around; */
     position: relative;
     top: 2vmin;
 }
@@ -244,16 +240,14 @@ body {
     width: 20vmin;
     height: 10vmin;
     background-color: rgb(255, 255, 255);
-    border-bottom: 0.5vmin solid rgb(70, 70, 70);
+    border: none;
     overflow: hidden;
-    position: relative;
-    /* transform: translateX(-15vmin); */
+    /* position: relative; */
+    position: absolute;
+    transform: translateX(-15vmin);
     border-radius: 0 12vmin 0 12vmin;
-    box-shadow: inset 0.3vmin 0.2vmin 0.3vmin rgba(17, 17, 17, 0.8);
+    box-shadow: inset 0 0 1vmin rgba(17, 17, 17, 0.8);
     filter: drop-shadow( -0.8vmin -0.5vmin 0.3vmin  rgb(216, 59, 59));
-    /* -webkit-appearance: none;  */
-
- 
 }
 
 .left::after {
@@ -349,12 +343,12 @@ body {
         opacity: 0;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%) scale(0.1);
+        transform: translate(-50%, -50%) scale(0.1) rotate(80deg);
     }
     100% {
         left: 50%;
         top: -9%;
-        transform: scale(1) rotate(80deg);
+        transform: scale(1) rotate(80deg) ;
     }
 }
 
@@ -367,12 +361,12 @@ body {
         opacity: 0;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%) scale(0.1);
+        transform: translate(-50%, -50%) scale(0.1) rotate(-80deg);
     }
     100% {
         top: 60%;
         left: -9%;
-        transform: scale(1) rotate(-60deg);
+        transform: scale(1) rotate(-80deg) ;
     }
 }
 
@@ -385,7 +379,7 @@ body {
         opacity: 0;
         right: 50%;
         top: 50%;
-        transform: translate(-50%, -50%) scale(0.1);
+        transform: translate(-50%, -50%) scale(0.1) rotate(180deg);
     }
     100% {
         top: 60%;
@@ -413,27 +407,27 @@ body {
 .right {
     width: 20vmin;
     height: 10vmin;
-    position:fixed;
-    /* background-color: rgb(187, 177, 214); */
-    animation: bgcolor 2s linear 2s both;
-    border-bottom: 0.5vmin solid rgb(70, 70, 70);
+    background-color: rgb(255, 255, 255);
+    border: none;
     overflow: hidden;
-    position: relative;
-    /* transform: translateX(15vmin); */
+    /* position: relative; */
+    position: absolute;
+    transform: translateX(15vmin);
     border-radius: 12vmin 0 12vmin 0;
-    box-shadow: inset -0.3vmin 0.2vmin 0.3vmin rgba(17, 17, 17, 0.8);
+    box-shadow: inset 0 0 1vmin rgba(17, 17, 17, 0.8);
     filter: drop-shadow( 0.8vmin -0.5vmin 0.3vmin  rgb(216, 59, 59));
+    /* animation: bgcolor 2s linear 2s both; */
 
 }
 
-@keyframes bgcolor {
+/* @keyframes bgcolor {
     0% {
         background-color: rgb(255, 255, 255);
     }
     100% {
         background-color: rgb(187, 177, 214);
     }
-}
+} */
 .right::after {
     content: '';
     position: absolute;
