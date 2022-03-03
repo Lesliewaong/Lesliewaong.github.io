@@ -354,27 +354,6 @@
   </url>
   
   <url>
-    <loc>https://lesliewaong.top/tags/%E7%9B%92%E6%A8%A1%E5%9E%8B/</loc>
-    <lastmod>2022-03-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/tags/BFC/</loc>
-    <lastmod>2022-03-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lesliewaong.top/tags/%E6%B5%AE%E5%8A%A8/</loc>
-    <lastmod>2022-03-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lesliewaong.top/tags/%E9%80%89%E6%8B%A9%E5%99%A8/</loc>
     <lastmod>2022-03-03</lastmod>
     <changefreq>daily</changefreq>
@@ -404,6 +383,27 @@
   
   <url>
     <loc>https://lesliewaong.top/tags/extends/</loc>
+    <lastmod>2022-03-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lesliewaong.top/tags/%E7%9B%92%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2022-03-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lesliewaong.top/tags/BFC/</loc>
+    <lastmod>2022-03-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lesliewaong.top/tags/%E6%B5%AE%E5%8A%A8/</loc>
     <lastmod>2022-03-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -620,14 +620,14 @@
   </url>
   
   <url>
-    <loc>https://lesliewaong.top/tags/Promise/</loc>
+    <loc>https://lesliewaong.top/tags/React-Router/</loc>
     <lastmod>2022-03-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://lesliewaong.top/tags/React-Router/</loc>
+    <loc>https://lesliewaong.top/tags/Promise/</loc>
     <lastmod>2022-03-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
