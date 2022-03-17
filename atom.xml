@@ -278,6 +278,8 @@
     <category term="JS" scheme="https://lesliewaong.top/categories/JS/"/>
     
     
+    <category term="instanceof" scheme="https://lesliewaong.top/tags/instanceof/"/>
+    
     <category term="原型" scheme="https://lesliewaong.top/tags/%E5%8E%9F%E5%9E%8B/"/>
     
     <category term="继承" scheme="https://lesliewaong.top/tags/%E7%BB%A7%E6%89%BF/"/>
@@ -285,8 +287,6 @@
     <category term="new" scheme="https://lesliewaong.top/tags/new/"/>
     
     <category term="bind" scheme="https://lesliewaong.top/tags/bind/"/>
-    
-    <category term="instanceof" scheme="https://lesliewaong.top/tags/instanceof/"/>
     
   </entry>
   
