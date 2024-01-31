@@ -1,231 +1,370 @@
-<!DOCTYPE html>
-<html lang="en">
+<html style="font-size: 12.8341px;">
+<script type="text/javascript" src="chrome-extension://nhpjggchkhnlbgdfcbgpdpkifemomkpg/pageScripts/main.js"></script>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+    <style class="vjs-styles-defaults">
+        .video-js {
+            width: 300px;
+            height: 150px;
+        }
 
-    body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+        .vjs-fluid {
+            padding-top: 56.25%
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="preconnect" href="https://at.alicdn.com">
+    <title>123</title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="uc-video-params" content="player: system">
+    <meta name="uc-audio-params" content="player: system">
+    <meta property="og:title" content="更多资讯请下载央视新闻客户端">
+    <meta property="og:description" content="点击查看更多">
+    <meta property="og:image" content="https://app.cctvnews.cctv.com/logo/ic_launcher.png">
+    <link rel="icon" href="https://content-static.cctvnews.cctv.com/lib/favicon.ico">
+    <link rel="preconnect" href="https://emas-api.cctvnews.cctv.com/">
+    <link rel="preconnect" href="https://img.cctvnews.cctv.com/">
+    <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/a/font_3404159_gaznvdz5azb.css">
+    <link rel="stylesheet" type="text/css" href="https://content-static.cctvnews.cctv.com/lib/aliplayer-2.15.8-min.css">
+    <script>(function () { if ("undefined" !== typeof window) { var a = window.navigator.userAgent.toLocaleLowerCase(), c = /ccnews/i.test(a); a = /(android)/i.test(a) ? "https://m.cctvnews.cctv.com" : ""; if (c) { var e = document.createDocumentFragment(), f = "";[{ src: "".concat(a, "/font/CMGDigitalNewsSong-Regular.ttf"), display: "block", weight: "normal" }, { src: "".concat(a, "/font/CMGDigitalNewsSong-").concat([].includes(location.pathname) ? "Medium" : "Regular", ".ttf"), display: "block", weight: 401 }, { src: "".concat(a, "/font/CMGDigitalNewsSong-Bold.ttf"), display: "block", weight: "bold" }].forEach(function (d) { var g = d.src, h = d.weight; d = d.display; var b = document.createElement("link"); b.href = g; b.rel = "preload"; b.as = "font"; b.type = "font/ttf"; b.crossOrigin = "anonymous"; f += "@font-face { font-family: 'CCNEWS-SONGTI'; src: url('".concat(g, "'); font-display: ").concat(d, "; font-weight: ").concat(h, "; }"); e.appendChild(b) }); c = document.createElement("style"); c.type = "text/css"; c.innerHTML = f; e.appendChild(c); document.head.appendChild(e) } } })();</script>
+    <script>(function () { if (typeof window !== 'undefined') { var save = function save(error) { try { var cache = JSON.parse(localStorage.getItem('__cache_temp_error')); var newCache = (cache || []).concat(error); localStorage.setItem('__cache_temp_error', JSON.stringify(newCache)) } catch (error) { console.log(error) } }; var errorCallback = function errorCallback(ev) { var _ref = ev || {}, error = _ref.error, target = _ref.target; var _ref2 = target || {}, tagName = _ref2.tagName, src = _ref2.src, href = _ref2.href; var timestamp = Date.now(); if (error) { save({ time: timestamp, message: (error === null || error === void 0 ? void 0 : error.stack) || (error === null || error === void 0 ? void 0 : error.message) || '', }) } else if (target && tagName) { save({ time: timestamp, message: '[<'.concat(tagName === null || tagName === void 0 ? void 0 : tagName.toLowerCase(), '>:').concat(src || href, '] load failed'), }) } }; window.addEventListener('error', errorCallback, true) } })();</script>
+    <script src="https://content-static.cctvnews.cctv.com/lib/jweixin-1.6.0.js"></script>
+    <script>(function () { if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") { handleFontSize() } else { if (document.addEventListener) { document.addEventListener("WeixinJSBridgeReady", handleFontSize, false) } else if (document.attachEvent) { document.attachEvent("WeixinJSBridgeReady", handleFontSize); document.attachEvent("onWeixinJSBridgeReady", handleFontSize) } } function handleFontSize() { WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize': 0 }); WeixinJSBridge.on('menu:setfont', function () { WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize': 0 }) }) } })();</script>
+    <link rel="preload" href="https://content-static.cctvnews.cctv.com/lib/windvane-3.0.6.js" as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/css/pages/_app.c176b643.chunk.css"
+        as="style">
+    <link rel="stylesheet"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/css/pages/_app.c176b643.chunk.css"
+        data-n-g="">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/css/d8be95ee108e93c0fa61b12a2c12c89b47a6866c_CSS.c0655d9b.chunk.css"
+        as="style">
+    <link rel="stylesheet"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/css/d8be95ee108e93c0fa61b12a2c12c89b47a6866c_CSS.c0655d9b.chunk.css"
+        data-n-p="">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/css/pages/indexPreview.7f093e81.chunk.css"
+        as="style">
+    <link rel="stylesheet"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/css/pages/indexPreview.7f093e81.chunk.css"
+        data-n-p="">
+    <noscript data-n-css="true"></noscript>
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/main-12fc0a9ea8c437738e86.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/webpack-1e6f216fc302a9042f96.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/framework.ff099e57b63a8fa87e12.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/2edb282b.eacec24cab2520bc8cca.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/1e071c28.095d1f3b39cda5e6ff5a.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/3848730020ffe2bdbc246afabff78aa09da50dc5.26af8bda54174eb36b90.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/d3a424208919edb556df6fd51e8db819698edf18.96e37d991a51d71cbccb.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/ecce83fe4d994e01c8d1a67aa2d8d10bc14ffaad.47cf1e51daa7866e303d.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/pages/_app-cc9cadbbfc7e65bcf0ea.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/413057b3.7747a424dd3fc5fe5c19.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/1dd05252.80afa37c68e8e2f82ede.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/35c5c0eb.62af30c558c04614818f.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/c0080b9d6891d25fc4d91983ff1ca8225c725326.2198da9f9d8b08a8876f.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/64a582a5f37267fee6effc1f9dde292e99076de7.9cd75d3e6fa31db6b039.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/b0ed4b21fe468a4d706c6f7aa393419d570dabbf.3cd7c9773a3e3f3e7c7d.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/d8be95ee108e93c0fa61b12a2c12c89b47a6866c_CSS.30bc55982eb87b3a521c.js"
+        as="script">
+    <link rel="preload"
+        href="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/pages/indexPreview-0620b3f9eb862d62f9b3.js"
+        as="script">
+    <meta property="og:url" content="https://content-static.cctvnews.cctv.com/snow-book/indexPreview.html">
+    <style data-styled="active" data-styled-version="5.3.11"></style>
+    <style id="VMst0.0068226571193492624">
+        ._webfullscreen_box_size_ {
+            width: 100% !important;
+            height: 100% !important;
+        }
 
-    .scene {
-      perspective: 300vw;
-      width: 100vw;
-      height: calc(100vh - 200px);
-    }
+        ._webfullscreen_ {
+            display: block !important;
+            position: fixed !important;
+            width: 100% !important;
+            height: 100% !important;
+            top: 0 !important;
+            left: 0 !important;
+            background: #000 !important;
+            z-index: 999999 !important;
+        }
 
-    .cube {
-      position: relative;
-      width: inherit;
-      height: inherit;
-      transform-style: preserve-3d;
-      transform: translateZ(-50vw) rotateY(calc((1 - var(--rotatePercent)) * 90deg * -1));
-    }
-
-    .cube.transition {
-      transition: transform .25s;
-    }
-
-    .face {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: inherit;
-      height: inherit;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      border-radius: 8px;
-    }
-
-    .face-left {
-      transform: rotateY(0deg) translateZ(50vw);
-    }
-
-    .face-front {
-      transform: rotateY(90deg) translateZ(50vw);
-    }
-
-    .face-right {
-      transform: rotateY(180deg) translateZ(50vw);
-    }
-  </style>
+        ._webfullscreen_zindex_ {
+            z-index: 999999 !important;
+        }
+    </style>
+    <script type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.15.8/hls/aliplayer-hls-min.js"></script>
 </head>
 
-<body>
-  <div class="scene" style="--rotatePercent: 0">
-    <div class="cube">
-      <div class="face face-left"></div>
-      <div class="face face-front"></div>
-      <div class="face face-right"></div>
+<body class="__forbidden-scroll-bar">
+    <script src="https://content-static.cctvnews.cctv.com/lib/aliplayer-2.15.8-min.js"></script>
+    <div id="__next">
+        <div class="__ios"><span class="iconfont" style="visibility:hidden"></span><span class="preload-font"
+                style="visibility:hidden"></span><span class="preload-fontbold" style="visibility:hidden"></span>
+            <div class="temp-content">
+                <div class="detail-content">
+                    <div class="index-header">
+                        <div class="index-media-header">
+                            <div class="index-media-header-left"></div>
+                            <div class="index-media-header-right">
+                                <div class="media-info">
+                                    <div class="media-info-left"><img class="media-icon"
+                                            src="https://img.cctvnews.cctv.com/image/old0907/157c69efb7694c7dbfa78c900c038044.jpg"
+                                            alt="">
+                                        <div class="media-content">
+                                            <div class="media-title-wrap">
+                                                <h1 class="media-title">总台吉林总站</h1><button
+                                                    class="rmt-mobile-button rmt-mobile-button-type-primary rmt-mobile-button-size-smallest rmt-mobile-button-with-icon media-btn-care"><i
+                                                        class="iconfont icon_c_add rmt-mobile-button-icon rmt-mobile-button-icon-add"></i><span>关注</span></button>
+                                            </div>
+                                            <p class="media-desc"><span class="media-publish-time">2024-01-31
+                                                    23:13:39</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h1 class="title">123</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <article class="article-content  " id="article-content-container">
+                        <div class="container-img">
+                            <div class="com-img" ><img
+                                    class="" alt=""
+                                    src="https://oss-prod-cms-img.cctvnews.cctv.com/image/1006/process/41260ce186374a39881836525bf0602b.jpg?Expires=1707923619&amp;OSSAccessKeyId=LTAI4FzWqta7ptjRsCvGGUFJ&amp;Signature=akU%2Fv%2BtG8OqFcQf3vughkWWqd2M%3D">
+                            </div>
+                            <p class="desc " style="display: none;"></p>
+                        </div>
+                        <div class="container-img">
+                            <div class="com-img" ><img
+                                    class="" alt=""
+                                    src="https://oss-prod-cms-img.cctvnews.cctv.com/image/1006/upload/202401/11804aecb43545efae36369375388051.gif?Expires=1707923619&amp;OSSAccessKeyId=LTAI4FzWqta7ptjRsCvGGUFJ&amp;Signature=D2clBeUh2izG9iBtxbSJ%2BuUdUQc%3D">
+                            </div>
+                            <p class="desc " style="display: none;"></p>
+                        </div>
+                        <div class="container-video">
+                            <div class="sc-gEvEer giAKcf">
+                                <div class="video-player-wrap">
+                                    <div class="video-component">
+                                        <div>
+                                            <div class="player-container landscape-mode custom-prism-player-ready">
+                                                <div id="video_player_index-player-id-v-2-2" class="prism-player"
+                                                    data-fullscreen-container="true" x5-playsinline=""
+                                                    x-webkit-airplay="" playsinline="" webkit-playsinline=""
+                                                    style="width: 100%; height: 300px;">
+                                                    <video webkit-playsinline="" playsinline="" x-webkit-airplay=""
+                                                        x5-playsinline="" data-fullscreen-container="true"
+                                                        preload="preload" style="width: 100%; height: 100%;"
+                                                        src="https://oss-prod-cms-v-a.cctvnews.cctv.com/video/1006/p/120229642749271654789011006/621b5de823324ca98b717935fb8575d2-3.m3u8?Expires=1707924040&OSSAccessKeyId=LTAI4FzWqta7ptjRsCvGGUFJ&Signature=2PmlVYDSwAobU2GvoN194BN1ve8%3D&x-oss-process=hls%2Fsign"></video>
+                                                    <div class="custom-control-bar-root">
+                                                        <div class="custom-prism-control-bar"><button
+                                                                class="custom-prism-play-control custom-prism-control custom-prism-button "
+                                                                type="button"><span
+                                                                    class="custom-prism-icon-placeholder"></span></button>
+                                                            <div
+                                                                class="custom-prism-current-time custom-prism-time-control custom-prism-control">
+                                                                <span
+                                                                    class="custom-prism-current-time-display">00:00</span>
+                                                            </div>
+                                                            <div
+                                                                class="custom-prism-progress-control custom-prism-control">
+                                                                <div
+                                                                    class="custom-prism-progress-holder custom-prism-slider custom-prism-slider-horizontal">
+                                                                    <div class="custom-prism-load-progress">
+                                                                        <div></div>
+                                                                    </div>
+                                                                    <div class="custom-prism-play-progress custom-prism-slider-bar"
+                                                                        style="width: 0%;"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="custom-prism-duration custom-prism-time-control custom-prism-control">
+                                                                <span class="custom-prism-duration-display">01:44</span>
+                                                            </div><button type="button"
+                                                                class="custom-prism-fullscreen-control custom-prism-control custom-prism-button"><span
+                                                                    class="custom-prism-icon-placeholder"></span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-partial-layer-root">
+                                                        <div class="live-tag-container"></div>
+                                                    </div>
+                                                    <div class="custom-default-control-root">
+                                                        <div class="custom-play-btn">
+                                                            <div class="custom-play-btn-outter"></div>
+                                                        </div>
+                                                        <div class="custom-prism-duration-badge"><span
+                                                                class="duration-badge-text">01:44</span></div>
+                                                    </div>
+                                                    <div class="loading-center prism-hide"
+                                                        id="video_player_index-player-id-v-2-2_component_896F54E9-B97B-42EB-99ED-A059654DE3FE">
+                                                        <div class="circle"></div>
+                                                        <div class="circle1"></div>
+                                                    </div>
+                                                    <div class="prism-cover"
+                                                        id="video_player_index-player-id-v-2-2_component_997A5E39-5E47-4BCA-9821-41105EBF69E2"
+                                                        style="background-image: url(&quot;https://oss-prod-cms-img.cctvnews.cctv.com/image/1006/snapshot/120229642565980569689001006/1c85f4a43bd043e9bf8687d1c7d51160.jpg?Expires=1707923619&amp;OSSAccessKeyId=LTAI4FzWqta7ptjRsCvGGUFJ&amp;Signature=3lknaerTGH5DMmPFT6MAUoMMdZ8%3D&quot;); float: left; margin-left: 0px; margin-top: 0px;">
+                                                    </div>
+                                                    <div class="prism-animation"
+                                                        id="video_player_index-player-id-v-2-2_component_8147C589-0A99-4DC4-80A1-089EB6B7E918"
+                                                        style="float: left; margin-left: 0px; margin-top: 0px;"></div>
+                                                    <div class="prism-auto-stream-selector"
+                                                        id="video_player_index-player-id-v-2-2_component_9AB55A04-EB96-4ACD-9FAD-B2DEACA5FEE9"
+                                                        style="float: left; margin-left: 0px; margin-top: 0px;">
+                                                        <div>
+                                                            <p class="tip-text"></p>
+                                                        </div>
+                                                        <div class="operators"><a class="prism-button prism-button-ok"
+                                                                type="button">确认</a><a
+                                                                class="prism-button prism-button-cancel"
+                                                                target="_blank">取消</a></div>
+                                                    </div>
+                                                    <div class="prism-marker-text"
+                                                        id="video_player_index-player-id-v-2-2_component_5B2A10FD-0230-44C1-BB42-3125E5120497"
+                                                        style="float: left; margin-left: 0px; margin-top: 0px;">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="prism-text-overlay"
+                                                        id="video_player_index-player-id-v-2-2_component_EE04794B-E821-4BF5-BA48-D502363E9C47"
+                                                        style="float: left; margin-left: 0px; margin-top: 0px;">
+                                                        <div style="position: absolute; inset: 0px; margin: 1.5%;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prism-custom-tips"></div>
+                                                    <div class="prism-back-btn"></div>
+                                                    <div class="custom-wifi-tip-root">
+                                                        <div class="player-wifi">
+                                                            <div class="player-wifi-content">
+                                                                <div class="player-wifi-btn"><i
+                                                                        class="iconfont icon_c_play"><span>继续播放</span></i>
+                                                                </div>
+                                                                <p class="text">当前非Wi-Fi网络，继续播放将产生流量费用</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="video-desc">1月31日 (1)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a
+                            href="https://oss-prod-cms-v-a.cctvnews.cctv.com/video/1006/p/120229642749271654789011006/621b5de823324ca98b717935fb8575d2-3.m3u8?Expires=1707924040&OSSAccessKeyId=LTAI4FzWqta7ptjRsCvGGUFJ&Signature=2PmlVYDSwAobU2GvoN194BN1ve8%3D&x-oss-process=hls%2Fsign">访问菜鸟教程!</a>
+                        <p></p>
+                    </article>
+                    <div class="logo-placeholder-container"><img
+                            src="https://content-static.cctvnews.cctv.com/lib/cctv_logo.png" alt=""
+                            class="logo-placeholder-image">
+                        <div class="logo-placeholder-title">央视新闻</div>
+                        <div class="logo-placeholder-subtitle">我用心你放心</div>
+                    </div>
+                    <div class="container-like-list">
+                        <div class="item"><i class="icon-like"
+                                style="background-image: url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+Mi5pY29uLzI0L2ljb25fY19saWtlPC90aXRsZT4KICAgIDxnIGlkPSLmjqfku7YiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSIyLmljb24vMjQvaWNvbl9jX2xpa2UiPgogICAgICAgICAgICA8cmVjdCBpZD0iaWNvbi1hcmVhIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHg9IjAiIHk9IjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PC9yZWN0PgogICAgICAgICAgICA8cGF0aCBkPSJNMTcuMDcxMDY3OCwzLjk2NDQ2NjA5IEMxOS4wMjM2ODkzLDUuOTE3MDg3NTUgMTkuMDg1NjEwNyw4Ljg2OTM5OTc5IDE3LjIyMTEzOTUsMTEuNTc0OTk2OCBDMTYuMTkyNDY1OCwxMy4wNjc3NCAxNC4zNjY1MjQ3LDE0LjgxNjI3MjYgMTEuNzQzMzE2MiwxNi44MjA1OTQ2IEwxMS4wNzA5MDQzLDE3LjMyNzAwNCBDMTAuOTU2MDY3NCwxNy40MTIyOTM3IDEwLjgzOTg0NjMsMTcuNDk4MDI3NSAxMC43MjIyNDExLDE3LjU4NDIwNTQgTDEwLjI0Mzk0OSwxNy45MzEyNjk4IEMxMC4wOTgyNzQ2LDE4LjAzNTk2OTUgOS45MDE5Mzg1MSwxOC4wMzU2NzM5IDkuNzU2NTc5OSwxNy45MzA1MzYyIEw5LjI3Nzc1ODkzLDE3LjU4NDIwNTQgTDguNTYyODk5OTEsMTcuMDUyOTk3NiBMOC4yMTg5MDQzOCwxNi43OTE3MDM4IEw4LjIxODkwNDM4LDE2Ljc5MTcwMzggTDcuNTU3NzgxMywxNi4yNzc3MzYzIEM1LjMwNjU0MjQ1LDE0LjQ5ODk2MzQgMy43MTM1Njg4NCwxMi45MzEzODM2IDIuNzc4ODYwNDksMTEuNTc0OTk2OCBDMC45MTQzODkzMjYsOC44NjkzOTk3OSAwLjk3NjMxMDcyOSw1LjkxNzA4NzU1IDIuOTI4OTMyMTksMy45NjQ0NjYwOSBDNC44ODE1NTM2NSwyLjAxMTg0NDY0IDguMDQ3Mzc4NTQsMi4wMTE4NDQ2NCAxMCwzLjk2NDQ2NjA5IEwxMC4xNTI1NTM3LDMuODE4MTE1NzcgQzEyLjExNDE3MzgsMi4wMTMxMjg0MSAxNS4xNjg1MTM2LDIuMDYxOTExODUgMTcuMDcxMDY3OCwzLjk2NDQ2NjA5IFogTTE1Ljg5MjU1NjUsNS4xNDI5Nzc0IEMxNC42NzE2NjUzLDMuOTIyMDg2MTUgMTIuNzMxMTkwNiwzLjg0Mjg0MTkyIDExLjQ0MTkzOCw0LjkwMjg5MDM2IEwxMS4zMDYzNTgyLDUuMDIwODI2NDEgTDEwLjI3MDI5NzcsNi4wMTQ3NTcyOSBDMTAuMTA2NjY5NCw2LjE3MTczMTk1IDkuODQ3NTU0NzYsNi4xNjkwNDM0NiA5LjY4NzIxODc2LDYuMDA4NzA3NDYgTDguODIxNDg4Nyw1LjE0Mjk3NzQgQzcuNTE5NzQxMDYsMy44NDEyMjk3NiA1LjQwOTE5MTEzLDMuODQxMjI5NzYgNC4xMDc0NDM0OSw1LjE0Mjk3NzQgQzIuNzYwMjE4NSw2LjQ5MDIwMjM5IDIuNzE4ODY0NCw4LjU1MDcyNjI0IDQuMTUxMjI3MywxMC42MjkyNzY0IEM0LjgyNjgzNjI1LDExLjYwOTY3NTMgNS45Mzg0MTg1OSwxMi43NTk5MDgzIDcuNDc4MTk2NDYsMTQuMDYxNzk5MSBMOC4wMzk0MTQ1NiwxNC41Mjc1NTc1IEM4LjUyMTg5MTY1LDE0LjkyMDg4NzkgOS4wNDEzMzA3MiwxNS4zMjcxNTI1IDkuNTk3NTMzODgsMTUuNzQ1ODg4OCBMMTAsMTYuMDQ1ODMzMyBMMTAuMDY0MjE2NiwxNS45OTg1ODE3IEMxMi44MTE0NTE4LDEzLjk1OTA1NiAxNC43MDUxMzk0LDEyLjIxMDQwOTcgMTUuNzI5OTY1MSwxMC43OTcyNDMyIEwxNS44NDg3NzI3LDEwLjYyOTI3NjQgQzE3LjIzNjM3NDMsOC42MTU2ODA5MyAxNy4yNDA5MjcsNi42MTkwMDI3NCAxNi4wMTUwMjc5LDUuMjcxMzQ4MjYgTDE1Ljg5MjU1NjUsNS4xNDI5Nzc0IFoiIGlkPSLlvaLnirYiIGZpbGw9IiM2NjY2NjYiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==&quot;);"></i><span
+                                class="item-text" style="color: rgb(72, 80, 90);">喜欢</span></div>
+                        <div class="space"></div>
+                        <div class="item"><i class="icon-wechat"></i><span class="item-text ">微信</span></div>
+                        <div class="space"></div>
+                        <div class="item"><i class="icon-moments"></i><span class="item-text">朋友圈</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <script>
-    const images = [
-      'https://images.unsplash.com/photo-1629809666562-baf250ce0593?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80',
-      'https://images.unsplash.com/photo-1629804861249-26cc9b4293e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80',
-      'https://images.unsplash.com/photo-1629810222839-91468ac7c356?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-      'https://images.unsplash.com/photo-1629781415336-cb00736ada19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-      'https://images.unsplash.com/photo-1629808477866-496ef2a4e3e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-      'https://images.unsplash.com/photo-1629770547093-dc6cc6c653df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80',
-      'https://images.unsplash.com/photo-1504297050568-910d24c426d3?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-      'https://images.unsplash.com/photo-1629801892267-885d72f2dedf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-    ]
-
-    let touchX = 0
-    let percentage = 0
-    const scene = document.querySelector('.scene')
-    const cube = document.querySelector('.cube')
-    let index = 0
-    let isMouseDownFlag = false
-
-    setFaces()
-
-    const touchStartHandler = (e) => {
-      let target
-
-      if (typeof e.touches !== 'undefined' && e.touches.length === 1) {
-        target = e.touches[0]
-      } else {
-        target = e
-        isMouseDownFlag = true
-      }
-
-      touchX = target.clientX
-
-      e.preventDefault()
-    }
-
-    window.addEventListener('touchstart', touchStartHandler, {
-      passive: false
-    })
-    window.addEventListener('mousedown', touchStartHandler, {
-      passive: false
-    })
-
-    function isSwipeTo(direction, percentage) {
-      if (direction === 'left') {
-        return percentage > 0
-      }
-
-      if (direction === 'right') {
-        return percentage < 0
-      }
-    }
-
-    const touchMoveHandler = (e) => {
-      let target
-
-      if (typeof e.touches !== 'undefined' && e.touches.length === 1) {
-        target = e.touches[0]
-      } else {
-        if (!isMouseDownFlag) {
-          return
-        }
-
-        target = e
-      }
-
-      let offset = target.clientX - touchX
-      percentage = offset / window.innerWidth
-
-      // Keep the transition works
-      if (percentage > 0.95) percentage = 0.95
-      if (percentage < -0.95) percentage = -0.95
-
-      // Prevent move to left for first image
-      if (index === 0 && isSwipeTo('left', percentage)) {
-        percentage = 0
-      }
-
-      // Prevent move to right for last image
-      if (index === images.length - 1 && isSwipeTo('right', percentage)) {
-        percentage = 0
-      }
-
-      scene.style.setProperty('--rotatePercent', `${percentage}`)
-
-      e.preventDefault()
-    }
-
-    window.addEventListener('touchmove', touchMoveHandler, {
-      passive: false
-    })
-    window.addEventListener('mousemove', touchMoveHandler, {
-      passive: false
-    })
-
-    const touchEndHandler = (e) => {
-      if (Math.abs(percentage) > 0.5 && Math.abs(percentage) <= 1) {
-        if (percentage > 0) {
-          percentage = 1
-        } else {
-          percentage = -1
-        }
-      } else {
-        percentage = 0
-      }
-
-      turn(percentage)
-
-      isMouseDownFlag = false
-
-      e.preventDefault()
-    }
-
-    window.addEventListener('touchend', touchEndHandler, {
-      passive: false
-    })
-    window.addEventListener('mouseup', touchEndHandler, {
-      passive: false
-    })
-
-    function turn(direction) {
-      if (direction === 1) { // Left
-        index--
-      } else if (direction === -1) { // Right
-        index++
-      }
-
-      cube.classList.add('transition')
-      scene.style.setProperty('--rotatePercent', direction)
-    }
-
-    cube.addEventListener('transitionend', (e) => {
-      setFaces()
-    })
-
-    function setFaces() {
-      const left = document.querySelector('.face-left')
-      const front = document.querySelector('.face-front')
-      const right = document.querySelector('.face-right')
-
-      let leftIndex = (index === 0) ? 0 : index - 1
-      let frontIndex = index
-      let rightIndex = (index === images.length - 1) ? images.length - 1 : index + 1
-
-      cube.classList.remove('transition')
-      scene.style.setProperty('--rotatePercent', 0)
-
-      left.style.backgroundImage = `url(${images[leftIndex]})`
-      front.style.backgroundImage = `url(${images[frontIndex]})`
-      right.style.backgroundImage = `url(${images[rightIndex]})`
-    }
-  </script>
+    <script src="https://content-static.cctvnews.cctv.com/lib/windvane-3.0.6.js"></script>
+    <script id="__NEXT_DATA__"
+        type="application/json">{"props":{"pageProps":{}},"page":"/indexPreview","query":{},"buildId":"1.59.0","nextExport":true,"autoExport":true,"isFallback":false,"head":[["meta",{"charSet":"utf-8"}],["meta",{"name":"viewport","content":"width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"}],["link",{"rel":"preconnect","href":"https://at.alicdn.com"}],["title",{"children":"更多资讯请下载央视新闻客户端"}],["meta",{"name":"screen-orientation","content":"portrait"}],["meta",{"name":"x5-orientation","content":"portrait"}],["meta",{"name":"uc-video-params","content":"player: system"}],["meta",{"name":"uc-audio-params","content":"player: system"}],["meta",{"property":"og:title","content":"更多资讯请下载央视新闻客户端"}],["meta",{"property":"og:description","content":"点击查看更多"}],["meta",{"property":"og:image","content":"https://app.cctvnews.cctv.com/logo/ic_launcher.png"}],["meta",{"property":"og:url","content":"https://content-static.cctvnews.cctv.com"}],["link",{"rel":"icon","href":"https://content-static.cctvnews.cctv.com/lib/favicon.ico"}],["link",{"rel":"preconnect","href":"https://emas-api.cctvnews.cctv.com/"}],["link",{"rel":"preconnect","href":"https://img.cctvnews.cctv.com/"}],["link",{"rel":"stylesheet","type":"text/css","href":"https://at.alicdn.com/t/a/font_3404159_gaznvdz5azb.css"}],["link",{"rel":"stylesheet","type":"text/css","href":"https://content-static.cctvnews.cctv.com/lib/aliplayer-2.15.8-min.css"}],["script",{"dangerouslySetInnerHTML":{"__html":"(function(){if(\"undefined\"!==typeof window){var a=window.navigator.userAgent.toLocaleLowerCase(),c=/ccnews/i.test(a);a=/(android)/i.test(a)?\"https://m.cctvnews.cctv.com\":\"\";if(c){var e=document.createDocumentFragment(),f=\"\";[{src:\"\".concat(a,\"/font/CMGDigitalNewsSong-Regular.ttf\"),display:\"block\",weight:\"normal\"},{src:\"\".concat(a,\"/font/CMGDigitalNewsSong-\").concat([].includes(location.pathname)?\"Medium\":\"Regular\",\".ttf\"),display:\"block\",weight:401},{src:\"\".concat(a,\"/font/CMGDigitalNewsSong-Bold.ttf\"),display:\"block\",weight:\"bold\"}].forEach(function(d){var g=d.src,h=d.weight;d=d.display;var b=document.createElement(\"link\");b.href=g;b.rel=\"preload\";b.as=\"font\";b.type=\"font/ttf\";b.crossOrigin=\"anonymous\";f+=\"@font-face { font-family: 'CCNEWS-SONGTI'; src: url('\".concat(g,\"'); font-display: \").concat(d,\"; font-weight: \").concat(h,\"; }\");e.appendChild(b)});c=document.createElement(\"style\");c.type=\"text/css\";c.innerHTML=f;e.appendChild(c);document.head.appendChild(e)}}})();"}}],["script",{"dangerouslySetInnerHTML":{"__html":"(function(){if(typeof window!=='undefined'){var save=function save(error){try{var cache=JSON.parse(localStorage.getItem('__cache_temp_error'));var newCache=(cache||[]).concat(error);localStorage.setItem('__cache_temp_error',JSON.stringify(newCache))}catch(error){console.log(error)}};var errorCallback=function errorCallback(ev){var _ref=ev||{},error=_ref.error,target=_ref.target;var _ref2=target||{},tagName=_ref2.tagName,src=_ref2.src,href=_ref2.href;var timestamp=Date.now();if(error){save({time:timestamp,message:(error===null||error===void 0?void 0:error.stack)||(error===null||error===void 0?void 0:error.message)||'',})}else if(target\u0026\u0026tagName){save({time:timestamp,message:'[\u003c'.concat(tagName===null||tagName===void 0?void 0:tagName.toLowerCase(),'\u003e:').concat(src||href,'] load failed'),})}};window.addEventListener('error',errorCallback,true)}})();"}}],["script",{"src":"https://content-static.cctvnews.cctv.com/lib/jweixin-1.6.0.js"}],["script",{"dangerouslySetInnerHTML":{"__html":"(function(){if(typeof WeixinJSBridge==\"object\"\u0026\u0026typeof WeixinJSBridge.invoke==\"function\"){handleFontSize()}else{if(document.addEventListener){document.addEventListener(\"WeixinJSBridgeReady\",handleFontSize,false)}else if(document.attachEvent){document.attachEvent(\"WeixinJSBridgeReady\",handleFontSize);document.attachEvent(\"onWeixinJSBridgeReady\",handleFontSize)}}function handleFontSize(){WeixinJSBridge.invoke('setFontSizeCallback',{'fontSize':0});WeixinJSBridge.on('menu:setfont',function(){WeixinJSBridge.invoke('setFontSizeCallback',{'fontSize':0})})}})();"}}],["link",{"rel":"preload","href":"https://content-static.cctvnews.cctv.com/lib/windvane-3.0.6.js","as":"script"}]]}</script>
+    <script nomodule=""
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/polyfills-b24f25c67f7ece0ec8bb.js"></script>
+    <script src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/main-12fc0a9ea8c437738e86.js"
+        async=""></script>
+    <script src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/webpack-1e6f216fc302a9042f96.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/framework.ff099e57b63a8fa87e12.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/2edb282b.eacec24cab2520bc8cca.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/1e071c28.095d1f3b39cda5e6ff5a.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/3848730020ffe2bdbc246afabff78aa09da50dc5.26af8bda54174eb36b90.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/d3a424208919edb556df6fd51e8db819698edf18.96e37d991a51d71cbccb.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/ecce83fe4d994e01c8d1a67aa2d8d10bc14ffaad.47cf1e51daa7866e303d.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/pages/_app-cc9cadbbfc7e65bcf0ea.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/413057b3.7747a424dd3fc5fe5c19.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/1dd05252.80afa37c68e8e2f82ede.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/35c5c0eb.62af30c558c04614818f.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/c0080b9d6891d25fc4d91983ff1ca8225c725326.2198da9f9d8b08a8876f.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/64a582a5f37267fee6effc1f9dde292e99076de7.9cd75d3e6fa31db6b039.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/b0ed4b21fe468a4d706c6f7aa393419d570dabbf.3cd7c9773a3e3f3e7c7d.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/d8be95ee108e93c0fa61b12a2c12c89b47a6866c_CSS.30bc55982eb87b3a521c.js"
+        async=""></script>
+    <script
+        src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/chunks/pages/indexPreview-0620b3f9eb862d62f9b3.js"
+        async=""></script>
+    <script src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/1.59.0/_buildManifest.js"
+        async=""></script>
+    <script src="https://content-static.cctvnews.cctv.com/snow-book/_next/static/1.59.0/_ssgManifest.js"
+        async=""></script>
+    <script src="https://content-static.cctvnews.cctv.com/snow-book/online/1.23.0/index.js?t=1706714020229"></script>
+    <script src="https://content-static.cctvnews.cctv.com/snow-book/online/1.23.0/gray.js?t=1706714020229"></script>
 </body>
 
 </html>
